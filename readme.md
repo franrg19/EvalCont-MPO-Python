@@ -35,8 +35,8 @@ pip install colorama
 
 ## 🧑‍🦰 Autor
 
-Fran Rebollo
-Estudiante Desarrollo Aplicaciones Multiplataforma
+-Fran Rebollo
+-Estudiante Desarrollo Aplicaciones Multiplataforma
 
 ---
 
