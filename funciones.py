@@ -196,4 +196,10 @@ def empezar_quiz ():
     # Muestra resultados y guarda en ranking
     mostrar_resultados (nombre,aciertos, len(preguntas))
     guardar_resultado_archivo (nombre, aciertos, len(preguntas))
+    
+#funcion para resetear el archivo ranking   
+def resetear_ranking ():
+    with open ("ranking.txt","w") as archivo:
+        archivo.write ("")
+    print("🗑️  El ranking ha sido reseteado.")
             

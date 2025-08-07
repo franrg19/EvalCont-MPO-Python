@@ -14,7 +14,9 @@ def mostrar_menu ():
         time.sleep(0.5)
         print("2.🏆-Ver Ranking")
         time.sleep(0.5)
-        print("3.❌-Salir")
+        print("3.🗑️  Resetear Ranking")
+        time.sleep(0.5)
+        print("4.❌-Salir")
         time.sleep (0.5)
         
         # Solicita al usuario que seleccione una opción
@@ -26,8 +28,15 @@ def mostrar_menu ():
         elif opcion== "2":
             mostrar_ranking ()
         elif opcion== "3":
-            print("👋 Hasta la proxima")
-            break
+            confirmacion = input("⚠️ ¿Seguro que quieres resetear el ranking?  (s/n): ").lower ()
+            if confirmacion == "s":
+                resetear_ranking ()
+            else:
+                print("❌ Operación cancelada.")
+        elif opcion==4:
+            print("👋 Hasta la próxima")
+            break 
+            
         else:
             print("🚫 Opcion no valida")
 
